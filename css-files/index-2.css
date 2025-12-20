@@ -1,0 +1,10 @@
+#index-2{
+    background-color: var(--tertiary-colour);
+    padding-top: 20px;
+}
+.smaller-text{
+    font-size: 20px;
+    margin-left: 10px;
+    color: var(--text-2);
+    font-weight: 400;
+}

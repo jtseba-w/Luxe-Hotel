@@ -1,0 +1,92 @@
+.mobile-topbar {
+    position: sticky;
+    top: 0;
+    width: 96vw;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Hamburger button */
+.hamburger {
+    width: 35px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #000;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--text-2);
+    font-size: 18px;
+}
+.mobile-menu a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+/* Menu Closed */
+.mobile-menu {
+    font-family: var(--tetiary);
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transform: translateY(-100%);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 998;
+}
+
+/* Menu Open */
+.mobile-menu.active {
+    transform: translateY(0);
+}
+
+/* Hamburger X Animation */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+}
+.hamburger.active #thingie{
+    display: inline;
+}
+#pAndg{
+    white-space: nowrap;
+}

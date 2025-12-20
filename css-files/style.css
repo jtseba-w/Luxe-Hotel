@@ -1,1 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Libre+Caslon+Display&family=TASA+Explorer:wght@400..800&display=swap');
+:root {
+    --main:"Libre Caslon Display" ;
+    --secondary: 'DM Serif Text';
+    --tetiary: 'TASA Explorer';
+    --h1-size: 3em;
+    --button-size: 1.5em;
+    --p-size: 1.2em;
+    --h4-size: 1.22em;
+    --footer-size: 1em;
+    --main-colour: rgb(255, 238, 212);
+    --secondary-colour: rgb(51, 51, 51);
+    --tertiary-colour: rgb(255, 255, 255);
+    --topbar-height: 70px;
+    --text-1: rgb(222, 222, 222);
+    --text-2: rgb(0, 0, 0);
+}
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
+#topbar-content{
+    width: 100%;
+    font-family: var(--tetiary);
+}
+#topbar-content td a{
+    text-decoration: none;
+    color: var(--secondary-colour)!important;
+}
+.active-link{
+    font-weight: bold;
+    text-decoration: underline!important;
+    text-underline-offset: 4px;
+}
+.long-line{
+    height: 1px;
+    width: max-content;
+    background-color: var(--secondary-colour);
+    max-width: 80vw;
+    margin: 20px;
+}
+#topbar-content td a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.underlined{
+   text-align: center;
+    border-bottom: 2px solid var(--secondary-colour);
+}
+#main-cell{width: 100%;font-family: var(--main); font-size: 30px; font-weight: bold; color: var(--secondary-colour);}
+td{padding: 10px 10px;}
 
+body{
+    margin: 0;
+    font-family: var(--main);
+    animation: fadein 1s ;
+    background-color: rgb(55, 55, 55);
+}
+button{
+    animation: button-fadin 0.7s;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--tetiary);
+    font-size:var(--button-size) ;
+    width: fit-content;
+    transition: padding .5s ease-out;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.548);
+}
+@keyframes button-fadin {
+    from {
+        padding:10px 0px;
+    }
+    to {
+       padding: 10px 20px;
+    }
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: .5s ease-out;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#topbar {
+    width: 100%;
+    height: var(--topbar-height);
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.548);
+    animation: fadein 2s ease-in-out ;
+
+}
+@keyframes fadein {
+    from {
+        opacity: 0;;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.footer{
+    min-height: 50vh;
+    background: var(--main-colour);
+
+}
+#instagram{width: 40px;}
+#titkok{width: 35px;}
+#whatsapp{width: 45px;}
+#g-maps{width: 30px;}
+
+@media only screen and (max-width: 650px) {
+    #topbar{display: none;}
+}
+@media only screen and (min-width: 650px) {
+    #mobileTopbar{display: none;}
+}
+.swiper-pagination{
+    
+    color: var(--main-colour) !important;
+}

@@ -1,0 +1,38 @@
+
+ input, textarea {
+    font-family: var(--tetiary);
+    margin: 0; 
+    padding: 10px; 
+    font-size: 16px; 
+        }
+        input{
+            max-width: 30vw;
+        }
+button { 
+    padding: 12px; 
+
+    margin-top: 10px; 
+    font-size: 16px; 
+        }
+#error { 
+    color: red; 
+    display: none; 
+    font-family: var(--tetiary);
+}
+#message {
+    height: 100px;
+    width: 80vw;
+    resize: none;
+}
+#hp{
+    font-size: 1.3em;
+}
+h2{
+    font-size: 3em;
+}
+section{
+    color: var(--text-1);
+}
+textarea{
+    font-family: var(--tetiary);
+}

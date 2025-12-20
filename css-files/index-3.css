@@ -1,0 +1,14 @@
+#index-3{
+    background-image: url(../images/restaurant.png);
+    
+    
+}
+.right-aligned{
+    background-color: rgba(58, 58, 58, 0.832);
+    padding: 20px;
+    padding-right: fit-content;
+    }
+#index-3 h1{
+    color: var(--text-1);
+    font-size: 45px;
+}

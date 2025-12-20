@@ -1,0 +1,25 @@
+.drink-items{
+      display: grid;
+  /* One column by default (mobile-first) */
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+.drink-item{
+        flex: 1; /* Makes both columns take up equal space */
+        text-align: left;
+
+}
+.drink-item p,.drink-item h2,.drink-item h3{
+    margin: 0;
+}
+.drink-item h3{margin-bottom: 30px;}
+
+@media (max-width: 600px) {
+    .drink-items {
+        flex-direction: column; /* Stack columns vertically on mobile */
+        grid-template-columns: 1fr 1fr;
+    }
+}
+#starter{
+    background-image: url(../images/starter.avif);
+}
