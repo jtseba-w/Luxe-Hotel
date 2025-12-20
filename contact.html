@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact</title>
+      <link rel="stylesheet" href="css-files/topbar.css">
+    <link rel="stylesheet" href="css-files/style.css" />
+    <link rel="stylesheet" href="css-files/contact.css" />
+    <link rel="stylesheet" href="css-files/background.css" />
+    <link rel="stylesheet" href="css-files/footer.css" />
+    <link rel="stylesheet" href="css-files/title-sections.css" />
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+   
+
+    <style>
+    
+    </style>
+</head>
+<body>
+    <span id="mobileTopbar">
+      <header class="mobile-topbar">
+    <div class="logo">Luxe Hotel</div>
+
+    <div id="menuBtn" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html" Home</a>
+    <a href="dinning.html">Dinning</a>
+    <a href="contact.html" class="active-link">Contact</a>
+    <a href="book.html">Book</a>
+    <a href="about.html">About</a>
+    <a href="ammentities.html">Ammentities</a>
+</nav></span>
+
+
+
+        <span id="topbar"><table border="0" id="topbar-content">
+            <tr>
+                <td id="main-cell">Luxe Hotel</td>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="book">Book</a></td>
+                <td><a href="Ammentities">Ammentities</a></td>
+                <td><a href="dinning.html" >Dinning</a></td>
+                <td><a href="contact.html" class="active-link">Contact</a></td>
+                <td><a href="about.html">About</a></td>
+            </tr>
+        </table>
+
+        </span>
+        <section class="title-section" id="contact">
+            <div class="title">
+                <h1>Contact <br> Us </h1>
+                 <a href="index.html"><button id="hp" >Home Page</button></a>
+            </div>
+
+        </section>
+        
+        <center>
+            <section>
+<table style="max-width: 90vw;">
+    <tr>
+        <th colspan="2"><h2>Send a Message</h2></th>
+    </tr>
+    <tr><td>
+        <label>Your Name:</label><br>
+        <input id="name" type="text" placeholder="Your name">
+    </td>
+    <td>
+        <label>Inquiry:</label><br>
+        <input id="subject" type="text" placeholder="(optional)">
+    </td></tr>
+    <tr>
+        <td colspan="2">
+            <center>
+                <label>Your Message:</label><br>
+                <textarea type="text" id="message" rows="5" placeholder="Message"></textarea></center>
+        </td>
+    </tr>
+</table>
+    
+
+
+
+    <p id="error">Please fill in all boxes.</p>
+
+    <button onclick="sendEmail()">Gmail</button>
+    <button onclick="sendWhatsApp()">WhatsApp</button>
+    <button onclick="sendSMS()">Messanger</button>
+
+</section>
+</center>
+    
+    <script src="js-files/topbar.js"></script>
+    <script src="js-files/contact.js"></script>
+</body>
+</html>

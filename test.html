@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <!-- LINKS: Add class "dynamic-link" and your variables in data-base and data-id -->
+  <h3>Dynamic Links</h3>
+  <a class="dynamic-link" data-base="tel:" data-id="07712938">Call Us</a><br>
+  <a class="dynamic-link" data-base="store.com" data-id="b202">Shop Item</a><br>
+  <a class="dynamic-link" data-base="site.com" data-id="login-error">Help Page</a>
+
+  <hr>
+
+  <!-- TEXT: Add class "dynamic-text" and your variable in data-value -->
+  <h3>Dynamic Text</h3>
+  <p>User Name: <span class="dynamic-text" data-value="Alice Smith">...</span></p>
+  <p>Account Status: <span class="dynamic-text" data-value="Active Member">...</span></p>
+  <p>Last Login: <span class="dynamic-text" data-value="Friday, 2025-12-19">...</span></p>
+
+  <script>
+    // 1. This handles ALL links with the class "dynamic-link"
+    document.querySelectorAll('.dynamic-link').forEach(link => {
+      const base = link.dataset.base;
+      const id = link.dataset.id;
+      link.href = base + id;
+    });
+
+    // 2. This handles ALL text with the class "dynamic-text"
+    document.querySelectorAll('.dynamic-text').forEach(el => {
+      el.textContent = el.dataset.value;
+    });
+  </script>
+
+</body>
+</html>
