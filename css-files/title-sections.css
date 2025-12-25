@@ -7,7 +7,7 @@
     padding-top: calc(var(--topbar-height) + 20px);
 }
 .title-section h1 {
-    
+    position: relative;
     font-family: var(--main);
     font-size: var(--h1-size);
     color: white;

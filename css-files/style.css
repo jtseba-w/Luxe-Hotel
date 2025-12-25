@@ -115,10 +115,10 @@ button:hover{
 #whatsapp{width: 45px;}
 #g-maps{width: 30px;}
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
     #topbar{display: none;}
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 700px) {
     #mobileTopbar{display: none;}
 }
 .swiper-pagination{
